@@ -1,26 +1,31 @@
-# 👋 Hi, I'm Mathankumar V
+# 👋 Hi, I'm G2gitz
 
-🚀 Software Developer | Mobile & Backend Systems  
-I enjoy building clean, scalable applications — from intuitive UIs to solid backend logic.
+🚀 **Software Developer | Mobile & Backend Systems**  
+I build clean, scalable applications — crafting smooth user experiences backed by solid system design.
+
+---
+
+## 📊 GitHub Snapshot
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=G2gitz&show_icons=true&theme=tokyonight)
 
 ---
 
 ## 👨‍💻 About Me
-- 🔭 Currently learning **React.js**
-- 🎯 Strong interest in **Software Engineering** and full-stack system design
-- 🛠️ Comfortable with:
+- 🔭 Currently sharpening my skills in **React.js**
+- 🎯 Strong focus on **Software Engineering** & full-stack architecture
+- 🛠️ Hands-on experience with:
   - **Flutter, Firebase**
   - **Java, JavaFX**
   - **MySQL**
-- 🌱 Exploring **Node.js & Express**
+- 🌱 Exploring **Node.js & Express** for backend systems
 - ⚡ Fun fact: I can edit **AMVs for hours without blinking** 😎
 
 ---
 
 ## 🤝 Open to Collaborate On
-- 🚀 Side projects (apps, tools, automation)
-- 🧩 Open-source contributions (Flutter / Express)
-- 🔗 Real-world **backend + mobile app integrations**
+- 🚀 Meaningful side projects (apps, tools, automation)
+- 🧩 Open-source contributions (**Flutter / Express**)
+- 🔗 Real-world **mobile + backend integrations**
 
 ---
 
@@ -35,7 +40,7 @@ I enjoy building clean, scalable applications — from intuitive UIs to solid ba
 
 ## 📫 Connect With Me
 - 💼 **LinkedIn:** [Mathan Kumar](https://www.linkedin.com/in/mathankumar01/)
-- 🎥 **YouTube:** *G2editz — AMV content coming soon* 🎬
+- 🎥 **YouTube:** *G2gitz — AMV content coming soon* 🎬
 
 ---
 
