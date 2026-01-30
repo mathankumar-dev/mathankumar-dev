@@ -16,10 +16,10 @@ jobs:
 
       - name: Generate Stats SVG
         uses: cicirello/user-statistician@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           image-file: userstats.svg
-          # We use the 'colors' input to mimic Tokyonight
-          # Format: title;title-icons;text;icons;background;border
           colors: "#7aa2f7;#7dcfff;#acb0be;#7aa2f7;#1a1b26;#414868"
           include-title: true
           custom-title: "My GitHub Stats"
