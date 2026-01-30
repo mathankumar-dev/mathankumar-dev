@@ -5,9 +5,7 @@ I build clean, scalable applications — crafting smooth user experiences backed
 
 ## 📊 GitHub Snapshot
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=G2gitz&show_icons=true&theme=tokyonight" height="170" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api?username=mathankumar-dev&show_icons=true&theme=tokyonight" height="170" />
+  <img src="./userstats.svg" alt="GitHub Stats" width="80%" />
 </div>
 
 
