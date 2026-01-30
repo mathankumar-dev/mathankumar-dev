@@ -14,28 +14,28 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 1. Main Profile Card
+      # 1. Main Profile
       - name: Generate Main Stats
         uses: cicirello/user-statistician@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           image-file: userstats.svg
-          custom-title: "Main Development Hub"
-          # Tokyonight Hex Palette
+          custom-title: "Main Hub"
           colors: "#7aa2f7;#7dcfff;#acb0be;#7aa2f7;#1a1b26;#24283b"
+          # This is the "Cleanup" part:
           hide-keys: "starred, forked, member-since"
           category-order: "general, contributions, languages"
           border-radius: 12
 
-      # 2. Secondary Profile Card
+      # 2. Secondary Profile (The one showing 10)
       - name: Generate Secondary Stats
         uses: cicirello/user-statistician@v1
         env:
           GITHUB_TOKEN: ${{ secrets.SECONDARY_ACCOUNT_TOKEN }}
         with:
           image-file: otherstats.svg
-          custom-title: "Alt Workspace"
+          custom-title: "Second Workspace"
           colors: "#7aa2f7;#7dcfff;#acb0be;#7aa2f7;#1a1b26;#24283b"
           hide-keys: "starred, forked, member-since"
           category-order: "general, contributions, languages"
