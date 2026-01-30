@@ -1,4 +1,4 @@
-name: Generate GitHub Stats SVG
+name: Generate Dual Stats SVGs
 
 on:
   schedule:
@@ -14,20 +14,37 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Generate Stats SVG
+      # 1. Main Profile Card
+      - name: Generate Main Stats
         uses: cicirello/user-statistician@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           image-file: userstats.svg
-          colors: "#7aa2f7;#7dcfff;#acb0be;#7aa2f7;#1a1b26;#414868"
-          include-title: true
-          custom-title: "My GitHub Stats"
+          custom-title: "Main Development Hub"
+          # Tokyonight Hex Palette
+          colors: "#7aa2f7;#7dcfff;#acb0be;#7aa2f7;#1a1b26;#24283b"
+          hide-keys: "starred, forked, member-since"
+          category-order: "general, contributions, languages"
+          border-radius: 12
+
+      # 2. Secondary Profile Card
+      - name: Generate Secondary Stats
+        uses: cicirello/user-statistician@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.SECONDARY_ACCOUNT_TOKEN }}
+        with:
+          image-file: otherstats.svg
+          custom-title: "Alt Workspace"
+          colors: "#7aa2f7;#7dcfff;#acb0be;#7aa2f7;#1a1b26;#24283b"
+          hide-keys: "starred, forked, member-since"
+          category-order: "general, contributions, languages"
+          border-radius: 12
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add userstats.svg
-          git commit -m "Update GitHub Stats SVG" || exit 0
+          git add userstats.svg otherstats.svg
+          git commit -m "🎨 Update dual profile stats with Tokyonight UI" || exit 0
           git push
